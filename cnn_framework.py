@@ -63,7 +63,7 @@ classifier.fit_generator(training_set,
                          validation_data = test_set,
                          nb_val_samples = 2000)
 
-# Part 3 - Making a new Prediction
+# Part 3 - Making a new Predictions
                          
 import numpy as np
 from keras.preprocessing import image
@@ -73,7 +73,11 @@ test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
 training_set.class_indices
 if result[0][0] == 1,
-    prediction = 'dog'
+    prediction = 'Habitted'
 else:
-    prediction = 'cat'
-                         
+    prediction = 'Non-Habitted'
+    
+import tensorflow as tf
+                 
+import keras
+        
